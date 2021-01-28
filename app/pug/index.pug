@@ -1,0 +1,21 @@
+extends demo.pug
+
+block title 
+  |Main
+
+block content
+  div.sas#go
+   | sasati
+
+block addscript
+  script(src='script.js')
+  div
+
+append addscript
+  script(src='script.js')
+
+append metas
+  meta(viewport='device-width')
+
+append content
+  a(href='#') dada

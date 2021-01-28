@@ -7,6 +7,6 @@ gulp.task('pug-compile', ()=>{
     .pipe(gulp.dest('app/html'))
 });
 
-gulp.task('watch',()=>{
+gulp.task('watch',()=> {
   gulp.watch('app/pug/**/*.pug', gulp.series('pug-compile'))
 });

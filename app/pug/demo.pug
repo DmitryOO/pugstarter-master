@@ -1,23 +1,40 @@
 doctype html
 html
-  head
-    title Вообче
+  head(lang = "ru")
+    title 
+    block title
+    block metas  
     meta(charset = 'utf-8')
   body
+    
     ul
+      li
       li: a(href = "#")
       li: a(href = "#")
       li: a(href = "#")
       li: a(href = "#")
-    p ggogog <span> dgldgk</span>
+      li
+    p.  
+      ggogog #[i dgldgk] 
+      dggdgdg #[br]
+      ttyryy
+    ol
+      li( style = 'margin-left:100px')
+      li
     img(src="#")
     a(href="#") wewrwr
-    img(src="#kk")
+      img(src="#kk")
     ul
       li
         img(src="#" class="saas")
       li
       li
+    include includes/_header.pug
+    block content
+    block addscript
+    div
+      
+
 
 
 
