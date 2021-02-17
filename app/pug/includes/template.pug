@@ -1,4 +1,7 @@
-include includes/config.pug
+
+block config  
+  
+  include config.pug
 
 doctype html
 html
@@ -7,7 +10,7 @@ html
       
     block metas  
       meta(charset = 'utf-8')
-      meta(name = 'description' content = 'qwe')
+      meta(name = 'description' content = disc)
     block links 
       link(href = path+'style.css' rel = 'stylesheet')
   body
@@ -40,7 +43,7 @@ html
         img(src="#" class="saas")
       li
       li
-    include includes/_header.pug
+    include _header.pug
     block content
     block addscript
     div
